@@ -5,7 +5,7 @@
 }
 
 .container {
-    outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+    /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
     margin: 0 auto;
     width: 100%;
     max-width: 1170px;
@@ -68,7 +68,7 @@ header span {
 .about-section .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 60px;
 }
 select {
     border: 1px solid rgba(48, 48, 48, 0.3);
@@ -86,6 +86,7 @@ select {
 select:hover,
 .text-field:hover {
     cursor: pointer;
+    border: 1px solid #2965F1;
 }
 
 
@@ -107,6 +108,10 @@ select:hover,
 
 .frameworks-list,
 .books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
     /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 
@@ -118,14 +123,19 @@ select:hover,
 }
 
 .skills-block {
-    /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     min-width: 50%;
 }
 
 .books-list {
+    min-width: 50%;
     font-weight: 400;
     font-size: 16px;
     padding-left: 20px;
@@ -164,7 +174,8 @@ form {
 }
 
 .btn:hover {
-    /* 📍 Стили для кнопки при наведении курсора */
+    background-color: #2965F1E5;
+    cursor: pointer;
 }
 
 .line {
@@ -186,6 +197,7 @@ th, td {
 footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
+    text-align: center;
     /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
@@ -197,5 +209,6 @@ footer {
 }
 
 .footer-link:hover {
+    text-decoration: #1b04ff;
     /* 📍 Стили для ссылки при наведении курсора */
 }
